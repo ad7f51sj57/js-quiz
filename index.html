@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+    <title>QUIZ</title>
+</head>
+<body>
+    <header>
+        <h1>JavaScript Quiz</h1>
+        <div id="page-number-container"><span id="page-number">1</span>/6</div>
+    </header>
+    <main>
+        <section id="problem-container">
+            <div id="problem-header">
+                <h2></h2>
+            </div>
+            <div id="choices-container"></div>
+        </section>
+        <section>
+            <button class="check-btn problem-btn">확인</button>
+            <button id="next-btn" class="problem-btn">다음</button>
+        </section>
+    </main>
+
+    <dialog>
+        <div>
+            <h3>모든 문제를 풀었습니다.</h3>
+            <span>총 <span id="correct-answers-count"></span>개 맞추셨습니다.<span>
+            <form method="dialog">
+                <button id="ok-btn">확인</button>
+                <button id="restart-btn">재시작</button>
+            </form>
+        </div>
+    </dialog>
+
+    <script src="./src/app.js" type="module"></script>
+</body>
+</html>
